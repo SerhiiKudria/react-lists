@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background: #ededf3;
+}
+
+.userCardHeader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.userCard {
+  display: flex;
+  align-items: center;
+  width: var(--card-width);
+  min-width: 200px;
+  max-width: 300px;
+  flex: 1 1 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #f5f5f6;
+  box-shadow: 0 0 1px grey;
+}
+
+h1 {
+  font-size: 22px;
+  text-transform: capitalize;
+  padding: 20px 0 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 20px 0 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.photoContainer {
+  position: relative;
+}
+
+.userPhoto {
+  width: calc(var(--card-width));
+  height: calc(var(--card-width));
+  object-fit: cover;
+}
+
+.circleBehindIcon {
+  position: absolute;
+  width: calc(var(--circle-size));
+  height: calc(var(--circle-size));
+  background-color: red;
+  border-radius: 50%;
+  top: calc(var(--card-width) - var(--circle-size) / 2);
+  left: calc((var(--card-width) / 2) - var(--circle-size) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faPlus {
+  font-size: 20px;
+  color: white;
+}
+
+.firstName {
+  position: absolute;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  top: calc(var(--card-width) * 0.6);
+}
+
+.lastName {
+  position: absolute;
+  align-self: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+  top: calc(var(--card-width) * 0.7);
+}
+
+.countContainer {
+  padding: 50px 0px 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.count {
+  font-size: 25px;
+  text-transform: capitalize;
+  padding: 10px 0 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
